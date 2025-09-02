@@ -1,0 +1,110 @@
+/* Root settings for consistent box sizing and typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Page background and centering */
+body {
+  background: #f4f4f9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main game container */
+.game {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 320px;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Game title */
+.game h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Status display */
+#status {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Controls (label, select, button) */
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 1rem;
+  color: #333;
+}
+
+select {
+  padding: 0.4rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:disabled {
+  background: #888;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background: #005bb5;
+}
+
+/* Log area for game feedback */
+#log {
+  margin-top: 1rem;
+  max-height: 140px;
+  overflow-y: auto;
+  text-align: left;
+  background: #f1f1f1;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Responsive text sizing */
+@media (max-width: 400px) {
+  .game {
+    padding: 1rem;
+  }
+
+  .game h1 {
+    font-size: 1.3rem;
+  }
+
+  button, select, label {
+    font-size: 0.9rem;
+  }
+}
