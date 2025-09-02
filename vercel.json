@@ -1,4 +1,13 @@
 {
-  "builds": [{ "src": "api/game.py", "use": "@vercel/python" }],
-  "rewrites": [{ "source": "/(.*)", "destination": "/api/game.py" }]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "builds": [
+    { "src": "api/game.py", "use": "@vercel/python" },
+    { "src": "public/index.html", "use": "@vercel/static" },
+    { "src": "public/*.js", "use": "@vercel/static" },
+    { "src": "public/*.css", "use": "@vercel/static" }
+  ],
+  "rewrites": [
+    { "source": "/api/move", "destination": "/api/game.py" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
