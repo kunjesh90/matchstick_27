@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Matchstick Game</title>
+  <!-- Ensures the page scales correctly on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game">
+    <h1>27 Matchsticks Game (1–4, last loses)</h1>
+    <div id="status">
+      Remaining: <span id="remaining">27</span>
+    </div>
+    <div id="controls">
+      <!-- Accessible label tied correctly to select -->
+      <label for="user-move">Your move:</label>
+      <select id="user-move">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <button id="take-btn">Take</button>
+    </div>
+    <div id="log"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
