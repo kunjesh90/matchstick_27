@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  margin: 0;
+}
+
+.game {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+}
+
+#log {
+  margin-top: 1rem;
+  text-align: left;
+  height: 120px;
+  overflow-y: auto;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+}
